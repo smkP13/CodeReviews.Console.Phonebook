@@ -59,17 +59,15 @@ internal class ContactService
                 switch (option)
                 {
                     case "Name":
-                        contact.Name = AnsiConsole.Prompt(new TextPrompt<string>("Enter a Name").Validate(x => !string.IsNullOrWhiteSpace(x) && x.IndexOfAny(['\\', '[', '{', '&', ',', '\"', '(', ')', '[', ']', '{', '}']) == -1)); ;
-                        ContactController.UpdateContact(contact);
+                        contact.Name = Userinputs.GetName();
                         break;
                     case "Phone Number":
                         int outValue;
-                        contact.PhoneNumber = AnsiConsole.Prompt(new TextPrompt<string>("Enter a phone Number").Validate(x => x.Length >= 10 && x.Length <= 13 && int.TryParse(x, CultureInfo.CurrentCulture, out outValue)));
+                        contact.PhoneNumber = UserInputs.GetPhoneNumber();
                         ContactController.UpdateContact(contact);
                         break;
                     case "Email":
-                        contact.Email = AnsiConsole.Prompt(new TextPrompt<string>("Enter an email").Validate(x => x.IndexOf('@') != -1 && x.IndexOf('@') == x.LastIndexOf('@') && x.LastIndexOf('.') > x.LastIndexOf('@') &&
-                                        x.IndexOfAny(['\\', '/', '$', '!', '?', '[', '{', '&', ',', '\"', '(', ')', '[', ']', '{', '}', ' ']) == -1));
+                        contact.Email = UserInputs.GetEmail();
                         ContactController.UpdateContact(contact);
                         break;
                     case "Categories":
