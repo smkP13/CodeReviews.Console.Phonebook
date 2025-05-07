@@ -56,9 +56,8 @@ Files were separated by their utility according to simple MVC standard:
 - User's email is stored in a simple json file to be able to change it manually and easily.
 
 ## Ressources
-- Free SMTP Server for Testing by WPOven: https://www.wpoven.com/tools/
-- Send sms using c# by SmsFactor(CH): https://www.smsfactor.ch/api-sms-c
-- Entity Framework Docs by Microsoft: https://learn.microsoft.com/en-us/ef/core/get-started/overview/first-app?tabs=netcore-cli
-- Entity Framework Core for Beginners by The C# Academy: https://www.youtube.com/watch?v=tDiJdthMs1Q&list=PL4G0MUH8YWiDcv8EUWTbDxDlkSndfh-T0
-- Stack Overflow: https://stackoverflow.com/
-- How to send emails from C#/.NET - The definitive tutorial by Thomas Ardal: https://blog.elmah.io/how-to-send-emails-from-csharp-net-the-definitive-tutorial/
+- Free SMTP Server for Testing by WPOven: <https://www.wpoven.com/tools/>
+- Entity Framework Docs by Microsoft: <https://learn.microsoft.com/en-us/ef/core/get-started/overview/first-app?tabs=netcore-cli>
+- Entity Framework Core for Beginners by The C# Academy: <https://www.youtube.com/watch?v=tDiJdthMs1Q&list=PL4G0MUH8YWiDcv8EUWTbDxDlkSndfh-T0>
+- Stack Overflow: <https://stackoverflow.com/>
+- How to send emails from C#/.NET - The definitive tutorial by Thomas Ardal: <https://blog.elmah.io/how-to-send-emails-from-csharp-net-the-definitive-tutorial/>

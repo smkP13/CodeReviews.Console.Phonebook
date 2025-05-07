@@ -29,13 +29,11 @@ public class EmailController
     public bool SendEmail(UserEmail user, string subject, string body)
     {
         using MailMessage mail = new();
-        {
-            mail.From = new MailAddress(user.Email);
-            mail.To.Add(user.Email);
-            mail.Subject = subject;
-            mail.Body = body;
-            mail.IsBodyHtml = true;
-        }
+        mail.From = new MailAddress(user.Email);
+        mail.To.Add(user.Email);
+        mail.Subject = subject;
+        mail.Body = body;
+        mail.IsBodyHtml = true;
         try
         {
             using SmtpClient client = new("smtp.gmail.com", 587);

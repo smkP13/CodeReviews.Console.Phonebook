@@ -7,7 +7,6 @@ public class CategoryController
     public static Category? AddNewCategory(Category category)
     {
         using PhoneBookContext context = new();
-        List<Category> oldCategoriyList = context.Categories.ToList();
         context.Categories.Add(category);
         context.SaveChanges();
         return context.Categories.FirstOrDefault(x => x.Name == category.Name);

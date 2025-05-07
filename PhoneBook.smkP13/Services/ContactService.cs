@@ -9,7 +9,6 @@ class ContactService
     internal void AddContact()
     {
         Contact contact = new();
-        ContactCategory contactCategory = new();
         contact.FirstName = UserInputs.GetFirstName("Enter First Name (obligatory)");
         if (UserInputs.Validation("Add a Last Name?")) contact.LastName = UserInputs.GetLastName("Enter Last Name");
         contact.PhoneNumber = UserInputs.GetPhoneNumber("Enter a Phone Number");
